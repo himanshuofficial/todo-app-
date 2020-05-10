@@ -3,7 +3,7 @@ ToDo app made in django.
 ## To use this app you should have python installed on your local computer
 # Follow the following steps to make the app  properly work.
 
-##Installation
+## Installation
 1. Installed the requirements.txt file.
 ```bash
 pip install -r requuirements.txt
