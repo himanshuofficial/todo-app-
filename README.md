@@ -6,7 +6,7 @@ ToDo app made in django.
 ## Installation
 1. Installed the requirements.txt file.
 ```bash
-pip install -r requuirements.txt
+pip install -r requirements.txt
 ```
 2. migrate the changes by following command.
 ```bash
@@ -19,6 +19,11 @@ python manage.py migrate
 python manage.py runserver
 
 ```
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+# Note:
+If you are using pip3 then type pip3 instead of pip.
+
 
