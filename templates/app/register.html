@@ -1,0 +1,57 @@
+{% extends 'app/base1.html' %}
+{% load static %}
+
+
+{% block title %}SignUp Form{% endblock %}
+{% block css %}<link href="{% static 'app/main.css' %}" rel="stylesheet" type="text/css" media="all" />{% endblock %}
+{% block content_main %}
+	<div class="main-w3layouts wrapper">
+		<h1>SignUp Form</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action="" method="POST">
+					{% csrf_token %}
+					<input class="t{# {# ext" type="text" name="Username" placeholder="Username" required=""> 
+					
+					
+					
+					<input class="text email" type="email" name="email" placeholder="Email" required="">
+		
+					<input class="text" type="password" name="password1" placeholder="Password" required=""> 
+		
+					 <input class="text" type="password" name="password2" placeholder="Confirm Password" required=""> 
+					 {% for message in messages %}
+						{{message}}
+					 {% endfor %}
+
+					<div class="wthree-text">
+						
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="SIGNUP">
+				</form>
+				
+                <p>Already, have an Account? <a href="{% url 'login' %}"> Login Now!</a></p>
+			</div>
+		</div>
+	
+		<!-- copyright -->
+		<div class="colorlibcopy-agile">
+			<p>© 2020 Himanshu. All rights reserved <p>
+		</div>
+		<!-- //copyright -->
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //main -->
+{% endblock %}

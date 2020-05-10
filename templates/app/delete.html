@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+
+{% block content_main %}
+
+    <form action="" method="POST">{% csrf_token %}
+
+        <p>Are you sure to delete the Work " {{ task}}"</p>
+        <input type="submit" value="Delete">
+    </form>
+    <a href="{% url 'home' %}">Cancel</a>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'app/base1.html' %}
+{% load static %}
+{%block title %} Login Page {% endblock %}
+{% block css %}<link href="{% static 'app/main2.css' %}" rel="stylesheet" type="text/css" media="all" />{% endblock %}
+{% block content_main %} 
+
+<div class="login-page">
+    <div class="form">
+      <h2>Login Form</h2>
+      <br><br>
+      <form class="login-form" method="POST" action="">
+        {% csrf_token %}
+
+        <input type="text" placeholder="username" name='username'/>
+        
+        <input type="password" placeholder="password" name='password'/>
+        {% for msg in messages %}
+        <p>{{msg}}</p>
+        {% endfor %}
+        <button>login</button>
+
+        <p class="message">Not registered? <a href="{% url 'register' %}">Create an account</a></p>
+      </form>
+    </div>
+  </div>
+  {% endblock %}
