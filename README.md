@@ -1,4 +1,4 @@
-# todo-app
+# Todo-app
 ToDo app made in django. 
 ## To use this app you should have python installed on your local computer
 # Follow the following steps to make the app  properly work.
